@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ribcalls — Fanbase Ribka Budiman JKT48</title>
+
+    <link rel="icon" href="assets/logo.jpg" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        maroon: {
+                            900: "#2A070E",
+                            800: "#3F0B15",
+                            700: "#5C0F1D",
+                        },
+
+                        crimson: "#7A1220",
+                        flame: "#F0541C",
+                        gold: "#E3A63E",
+                        amber: "#FFC65C",
+                        cream: "#FFF3DD",
+                        ink: "#2B0A05",
+                    },
+
+                    fontFamily: {
+                        display: ["Cinzel", "serif"],
+
+                        body: ["Plus Jakarta Sans", "sans-serif"],
+
+                        mono: ["Space Mono", "monospace"],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <script defer src="assets/js/script.js"></script>
+</head>
+
+<body class="font-body text-ink">
+    <!-- NAV -->
+
+    <header class="sticky top-0 z-40 bg-maroon-900/95 backdrop-blur border-b border-gold/20">
+        <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+            <a href="#top" class="flex items-center gap-3">
+                <img src="assets/img/logo.jpg" class="w-10 h-10 rounded-full" />
+
+                <span class="font-display text-cream tracking-wide text-lg">
+                    RIBCALLS
+                </span>
+            </a>
+
+            <nav class="hidden sm:flex gap-7 text-sm text-cream/70">
+                <a href="#top"> Beranda </a>
+
+                <a href="#jadwal-vc"> Jadwal VC </a>
+
+                <a href="#show"> Rekap Show </a>
+
+                <a href="#tentang"> Tentang </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section id="top" class="ember-bg">
+        <div class="max-w-6xl mx-auto px-5 py-24 text-center">
+            <img src="assets/img/logo.jpg" class="w-44 h-44 mx-auto rounded-full seal-ring glow-slow mb-8" />
+
+            <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber">
+                Fanbase Resmi
+            </p>
+
+            <h1 class="font-display text-5xl sm:text-6xl text-cream mt-5">
+                RIBCALLS
+            </h1>
+
+            <div class="ornate-divider w-40 mx-auto my-6"></div>
+
+            <p class="text-cream/70 max-w-xl mx-auto text-lg">
+                Fanbase pendukung Ribka Budiman member JKT48 generasi ke-12.
+            </p>
+        </div>
+    </section>
+
+    <!-- TENTANG -->
+
+    <section id="tentang" class="max-w-6xl mx-auto px-5 py-20">
+        <div class="grid sm:grid-cols-5 gap-10 items-center">
+            <div class="sm:col-span-2">
+                <div
+                    class="aspect-square rounded-2xl border border-gold/30 bg-gradient-to-br from-flame/10 to-gold/20 flex items-center justify-center font-mono text-crimson/40">
+                    Foto Ribka
+                </div>
+            </div>
+
+            <div class="sm:col-span-3">
+                <p class="font-mono text-xs uppercase text-flame">Tentang</p>
+
+                <h2 class="font-display text-3xl text-maroon-800 mt-3">
+                    Ribka Budiman
+                </h2>
+
+                <p class="mt-5 leading-relaxed text-ink/70">
+                    Ribcalls adalah fanbase yang dibuat sebagai wadah informasi dan
+                    dukungan untuk Ribka Budiman JKT48.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VC -->
+
+    <section id="jadwal-vc" class="bg-cream border-y border-gold/20">
+        <div class="max-w-6xl mx-auto px-5 py-20">
+            <p class="font-mono text-xs uppercase text-flame">Jadwal</p>
+
+            <h2 class="font-display text-3xl text-maroon-800 mb-8">
+                Jadwal VC Ribka
+            </h2>
+
+            <div id="vc-events" class="space-y-8"></div>
+        </div>
+    </section>
+
+    <!-- SHOW -->
+
+    <section id="show" class="max-w-6xl mx-auto px-5 py-20">
+        <p class="font-mono text-xs uppercase text-flame">Statistik</p>
+
+        <h2 class="font-display text-3xl text-maroon-800 mb-8">
+            Rekap Show Ribka
+        </h2>
+
+        <div id="show-recap"></div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="ember-bg">
+        <div class="text-center max-w-6xl mx-auto px-5 py-14">
+            <h2 class="font-display text-2xl text-cream">RIBCALLS</h2>
+
+            <p class="text-cream/50 text-sm mt-5">
+                Fanbase resmi Ribka Budiman JKT48
+            </p>
+
+            <p class="text-cream/30 text-xs mt-8">© 2026 Ribcalls</p>
+        </div>
+    </footer>
+</body>
+
+</html>

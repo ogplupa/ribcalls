@@ -1,0 +1,238 @@
+body{
+  background:#FFF3DD;
+}
+
+
+/* =========================
+   BACKGROUND
+========================= */
+
+.ember-bg{
+
+background:
+
+radial-gradient(
+60% 60% at 50% 30%,
+rgba(240,84,28,.35),
+transparent 60%
+),
+
+radial-gradient(
+80% 80% at 80% 80%,
+rgba(227,166,62,.2),
+transparent 60%
+),
+
+linear-gradient(
+160deg,
+#2A070E,
+#3F0B15 55%,
+#5C0F1D
+);
+
+}
+
+
+
+/* =========================
+   LOGO EFFECT
+========================= */
+
+.seal-ring{
+
+box-shadow:
+
+0 0 0 2px #E3A63E,
+
+0 0 0 7px rgba(227,166,62,.25),
+
+0 20px 60px -15px
+rgba(240,84,28,.6);
+
+}
+
+
+
+.glow-slow{
+
+animation:
+glow 3.5s ease-in-out infinite;
+
+}
+
+
+
+@keyframes glow{
+
+
+0%,100%{
+
+filter:
+drop-shadow(
+0 0 10px
+rgba(240,84,28,.35)
+);
+
+}
+
+
+50%{
+
+filter:
+drop-shadow(
+0 0 30px
+rgba(240,84,28,.7)
+);
+
+}
+
+
+}
+
+
+
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+
+.ornate-divider{
+
+height:1px;
+
+
+background:
+
+linear-gradient(
+90deg,
+transparent,
+#E3A63E,
+transparent
+);
+
+}
+
+
+
+
+
+/* =========================
+   VC CARD
+========================= */
+
+
+.schedule-card{
+
+transition:
+
+transform .25s ease,
+box-shadow .25s ease;
+
+}
+
+
+
+.schedule-card:hover{
+
+transform:
+translateY(-3px);
+
+
+box-shadow:
+
+0 15px 40px
+rgba(42,7,14,.15);
+
+}
+
+
+
+
+
+
+/* =========================
+   SHOW CARD
+========================= */
+
+
+#show-recap > div{
+
+border-radius:20px;
+
+
+transition:
+
+transform .25s ease,
+box-shadow .25s ease;
+
+}
+
+
+
+#show-recap > div:hover{
+
+transform:
+translateY(-4px);
+
+
+box-shadow:
+
+0 15px 35px
+rgba(42,7,14,.15);
+
+}
+
+
+
+
+
+
+/* =========================
+   TEXT
+========================= */
+
+
+.font-display{
+
+letter-spacing:.02em;
+
+}
+
+
+
+
+/* =========================
+   SCROLL
+========================= */
+
+
+html{
+
+scroll-behavior:
+smooth;
+
+}
+
+
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+
+@media(max-width:640px){
+
+
+h1{
+
+font-size:3rem!important;
+
+}
+
+
+
+}
